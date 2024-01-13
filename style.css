@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  * {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding-bottom: 5px;
+    transition: background-color 0.5s ease;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .scrolled {
+    background-color: #333;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    padding-left: 12px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+  }
+  
+  /* Animasi tulisan di bagian kiri (Logo) */
+  .logo {
+    animation: slideInLeft 2s ease;
+  }
+  
+  /* Animasi tulisan di bagian kanan (nav-links) */
+  .nav-links {
+    animation: slideInRight 2s ease;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00; /* Warna saat dihover */
+  }
+  
+  /* Animasi untuk indikator bawah nav link */
+  .nav-links li::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #ffcc00; /* Warna indikator */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links li:hover::after {
+    width: 100%;
+  }
+  
+  .about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+    padding: 50px 100px;
+    margin-bottom: 20px;
+  }
+
+  .about-img img {
+      border-radius: 0.5rem;
+  }
+
+  .about-text h2 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+
+  }
+
+  .about-text p {
+      font-size: 0.938rem;
+      margin: 2rem 0 1.1rem;
+      text-align: justify;
+  }
+
+  .btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background: #bc9667;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.7s; 
+    text-decoration: none;
+
+  }
+
+  .btn:hover{
+      background: #8a6f4d
+  }
+
+  .hamburger {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #333;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  @media screen and (max-width: 1000px){
+    /* ipad, tablets */
+   .about {
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 767px){
+    /* mobile */
+    .about {
+      padding: 250px 50px 20px;
+     }
+
+    header ul {
+        position: absolute;
+        top: -1000px;
+        left: -20px;
+        display: flex;
+        flex-direction: column;
+        width: 105%;
+        align-items: center;
+        justify-content: center;
+        z-index: -2;
+        transition: all ease-in-out 0.5s;
+     }
+
+     header ul li {
+      background-color: #333;
+      width: 105%;
+      height: 50px;
+      text-align: center;
+      margin: 0;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #333;
+     }
+
+     .active {
+        top: 55px !important;
+     }
+
+     .hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+
+     ul li:hover {
+      background-color: #ffcc00;
+      transition: none;
+     }
+
+}
