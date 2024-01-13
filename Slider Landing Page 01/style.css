@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.slider{
+    width: 1300px;
+    height: 100vh;
+    background-color: none;
+    margin: auto;
+    position: cover;
+}
+.slider .list01{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list01 img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: black;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}   
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.social a .bx {
+    font-size: 24px;
+    color: #1b1b1b;
+    padding: 10px;
+    background: #edeae3;
+    border-radius: 0.2rem;
+}
+
+.social a .bx:hover {
+    background: #bc9667;
+    color: #fff;
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box li a {
+    color: #1b1b1b;
+}
+
+.footer-box li a:hover {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5rem;
+}
+
+.footer-box .contact .location {
+    margin-bottom: 8px;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: #edeae3;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
