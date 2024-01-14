@@ -178,6 +178,10 @@ body {
       overflow-x: hidden;
     }
 
+    header {
+      width: 768px;
+    }
+
     header ul {
         position: absolute;
         top: -1000px;
