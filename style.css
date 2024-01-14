@@ -170,7 +170,7 @@ body {
    }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 600px){
     /* mobile */
     .about {
       margin-top: 200px;
