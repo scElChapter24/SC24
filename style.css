@@ -172,9 +172,11 @@ body {
     /* mobile */
     .about {
       padding: 250px 50px 20px;
-        margin-top: 200px;
-        z-index: 1000;
-     }
+    }
+
+    body {
+      overflow-x: hidden;
+    }
 
     header ul {
         position: absolute;
