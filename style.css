@@ -237,14 +237,6 @@ body {
     margin-top: 30px;
   }
 
-  body {
-    overflow-x: hidden;
-  }
-
-  .slider {
-    overflow-x: hidden;
-  }
-
   header {
     width: 100%;
   }
