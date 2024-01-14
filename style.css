@@ -173,7 +173,7 @@ body {
 @media screen and (max-width: 767px){
     /* mobile */
     .about {
-      padding: 250px 50px 20px;
+      margin-top: 200px;
     }
 
     body {
@@ -234,7 +234,6 @@ body {
 @media screen and (max-width: 480px){
   /* mobile */
   .about {
-    padding: 250px 50px 20px;
     margin-top: 200px;
   }
 
