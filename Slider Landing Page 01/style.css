@@ -157,8 +157,8 @@ section {
 
 @media screen and (max-width: 768px){
     .slider{
-        height: 100vh;
-        width: 678px;
+        height: 480px;
+        width: 400px;
     }
     body {
         overflow-x: hidden;
