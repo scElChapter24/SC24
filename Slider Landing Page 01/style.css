@@ -157,6 +157,10 @@ section {
 
 @media screen and (max-width: 768px){
     .slider{
-        height: 400px;
+        height: 100vh;
+        width: 678px;
+    }
+    body {
+        overflow-x: hidden;
     }
 }
