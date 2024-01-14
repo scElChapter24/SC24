@@ -234,7 +234,7 @@ body {
 @media screen and (max-width: 480px){
   /* mobile */
   .about {
-    margin-top: 150px;
+    margin-top: 300px;
   }
 
   header {
