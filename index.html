@@ -7,46 +7,76 @@
   <link rel="stylesheet" href="Slider Landing Page 01/style.css">
   <link rel="stylesheet" href="Slider Describe/style.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
- 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-  <header id="header">
-    <nav class="navbar" id="navbar">
-      <div class="logo">ElChapter</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#competition">Competition</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <i data-feather="menu"></i>
-      </div>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">ElChapter</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#competition" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Competition
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="olimpiade/olimpiade.html">Olimpiade</a></li>
+                    <li><a class="dropdown-item" href="sport/sport.html">Sport</a></li>
+                    <li><a class="dropdown-item" href="music/music.html">Music</a></li>
+                    <li><a class="dropdown-item" href="dance/dance.html">Dance</a></li>
+                    <li><a class="dropdown-item" href="Lompamar/lompamar.html">Lompamar</a></li>
+                    <li><a class="dropdown-item" href="WRC/wrc.html">WRC</a></li>
+                    <li><a class="dropdown-item" href="lensa/lensa.html">Lensa</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-  <section class="slider" id="home">
-    <div class="list01">
-        <div class="item01">
-            <img src="Slider Landing Page 01/1.jpg" alt="">
+  <div class="sliderimg" >
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="LATAR WEB UTAMA.png" class="d-block w-100" alt="..." style="width: 1000px; filter: brightness(50%);">
+          <div class="carousel-caption d-md-block">
+            <h1>An Extraordinary</h5>
+          </div>
         </div>
-        <div class="item01">
-            <img src="Slider Landing Page 01/2.jpg" alt="">
+        <div class="carousel-item ke2">
+          <img src="LATAR WEB 2.png" class="d-block w-100" alt="..." style="width: 1000px; filter: brightness(50%);">
+          <div class="carousel-caption d-md-block">
+            <h1>Highschool Evolution</h1>
+          </div>
         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="buttons">
-        <button id="prev01"><</button>
-        <button id="next01">></button>
-    </div>
-    <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-  </section>
+  </div>
 
   <section class="about" id="about">
     <div class="about-img">
@@ -54,11 +84,11 @@
     </div>  
     <div class="about-text">
         <h2>ElChapter 2024</h2>
-        <p>ElChapter "Evolution Concerning SMANISDA's Appraisals" Mencerminkan keyakinan dan tekad untuk terus berkembang dalam membawa perubahan agar dapat mencapai kemajuan yang berkelanjutan dan menghasilkan hasil yang lebih baik untuk seluruh teman-teman SMP, SMA, dan SMK sederajat di Jawa Timur.</p>
+        <p>ElChapter "Evolution Concerning SMANISDA's Appraisals" Mencerminkan keyakinan<br> dan tekad untuk terus berkembang dalam membawa perubahan agar dapat mencapai <br>kemajuan yang berkelanjutan dan menghasilkan hasil yang lebih baik untuk<br> seluruh teman-teman SMP, SMA, dan SMK sederajat di Jawa Timur.</p>
     </div>
   </section>
 
-  <div class="carousel" id="competition">
+  <div class="describe" id="competition">
     <div class="list">
         <div class="item">
             <img src="Slider Describe/ICON_IPU-removebg-preview.png">
@@ -80,8 +110,8 @@
                     CP = Josef Imanuel Rano X-10 <br> Nomor = 0895330376090 <br> Id line = josefimanuelr20 <br><br>
                 </div>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/REGULASI OLIMPIADE IPU SMANISDA CUP EL CHAPTER 2024.docx">JUKNIS</button>
+                    <button href="https://docs.google.com/forms/d/e/1FAIpQLSd9Yd73lnnrkyXySi7HFVOo0KF8UjxbH-veM8bSou-a0uDlew/viewform">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
@@ -103,14 +133,15 @@
                     <!-- lorem 50 -->
                     Olimpiade MIPA merupakan ajang kompetisi peningkatan keterampilan bagi para pelajar tingkat SMP. Bertujuan untuk membuka jalan bagi siswa berbakat untuk membuktikan kemampuannya dibidang Matematika dan IPA yang dipertemukan dalam satu ajang yaitu Smanisda Cup Elchapter 2024. <br><br>CP = Arimbi Wahyu Gayatri X-10 <br>Nomor = 08993357994 <br> Id line = gayatriadjie <br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/REGUL MIPA FINISHED-1 (1).docx">JUKNIS</button>
+                    <button hraf="https://docs.google.com/forms/d/e/1FAIpQLSdNHybkprwWWqDwQHAH9p5rYeWr6zq1MEEqf8u3a0NsZJMy-Q/viewform">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item" id="english">
             <img src="Slider Describe/ICON_ENGLISH-removebg-preview.png">
             <div class="introduce">
                 <div class="title">ElChapter 2024</div>
@@ -127,9 +158,10 @@
                     <!-- lorem 50 -->
                     Olimpiade Bahasa Inggris merupakan ajang kompetisi peningkatan keterampilan bagi para pelajar tingkat SMP. Bertujuan untuk membuka jalan bagi siswa berbakat untuk membuktikan kemampuannya dibidang Bahasa Inggris yang dipertemukan dalam satu ajang yaitu Smanisda Cup Elchapter 2024. <br><br> Anindita Sabrina Putri <br> Nomor : 088801723839 <br>Id line : sbrnaabeary <br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/REGUL SC ENGLISH BABAK PENYISIHAN 2024.docx">JUKNIS</button>
+                    <button href="https://docs.google.com/forms/d/e/1FAIpQLSdNHybkprwWWqDwQHAH9p5rYeWr6zq1MEEqf8u3a0NsZJMy-Q/viewform">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
@@ -151,6 +183,10 @@
                     <!-- lorem 50 -->
                     Kompetisi futsal adalah ajang pembuktian siswa tingkat SMP dalam bidang futsal yang ditujukan bagi para pemain berbakat di bidang futsal dengan berkompetitif dan bertanding dengan strategi terbaik yang dikumpulkan dalam satu ajang yaitu Smanisda Cup Elchapter 2024 <br><br> Marchello Arya Ghani Pramana X-9 <br> Nomor : 0895600218844 <br>Id Line:  hrzhugsz <br><br> 
                 </div>
+                <br><br>
+                <div class="checkout">
+                    <button href="Regulasi/REGUL_FUTSAL SMP_2024.docx">JUKNIS</button>
+                </div>
             </div>
         </div>
 
@@ -170,6 +206,10 @@
                 <div class="des">
                     <!-- lorem 50 -->
                     Kompetisi futsal adalah ajang pembuktian siswa tingkat SMA dalam bidang futsal yang ditujukan bagi para pemain berbakat di bidang futsal dengan berkompetitif dan bertanding dengan strategi terbaik yang dikumpulkan dalam satu ajang yaitu Smanisda Cup Elchapter 2024 <br><br> Erlandy Bakti Noviantoro X-5 <br>Nomor :  082231226705<br> Id Line : erlandyyy<br><br>
+                </div>
+                <br><br>
+                <div class="checkout">
+                    <button href="Regulasi/REGUL_FUTSAL SMA_2024.docx">JUKNIS</button>
                 </div>
             </div>
         </div>
@@ -191,9 +231,10 @@
                     <!-- lorem 50 -->
                     Solo Vocal adalah ajang kompetisi mengasah kreativitas dan keterampilan di bidang musik bagi pelajar, mahasiswa dan masyarakat umum. Bertujuan untuk menyempurnakan dan mengembangkan bakat bermusik yang dihimpun dalam satu ajang yaitu Smanisda Cup Elchapter 2024 <br><br> Anggita Salsabila Trihapsari <br>Nomor :  089524637584 <br> Id line :  anggitaasalsa <br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="regulasi solvoc (belum)">JUKNIS</button>
+                    <button href="https://docs.google.com/forms/d/e/1FAIpQLScve7cUC_f3V2ME5kN4vitwUlujceOoySWr7JiiBLb7mpM-dg/viewform">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
@@ -205,7 +246,7 @@
                 <div class="topic">DANCE</div>
                 <div class="des">
                     <!-- 20 lorem -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime. <br><br> Anggita Salsabila Trihapsari <br> Nomor :  089524637584 <br> Id line :  anggitaasalsa <br><br>
+                    Dance competition Smanisda Cup Elchapter 2024 adalah kompetisi tari modern bagi tim pelajar dan mahasiswa dengan koreografi yang kreatif. Top 3 tim terbaik dari penyisihan offline akan tampil di upacara penutupan.
                 </div>
                 <button class="seeMore">SELENGKAPNYA &#8599</button>
             </div>
@@ -213,63 +254,66 @@
                 <div class="title">DANCE</div>
                 <div class="des">
                     <!-- lorem 50 -->
-                    Dance competition adalah ajang kompetisi bagi tim dengan bakat koreografi tari modern yang ditujukan untuk pelajar dan mahasiswa. Bertujuan untuk mencari tim dance dengan berkolaborasi dan berkreativitas dalam satu ajang yaitu Smanisda Cup Elchapter 2024. Penyishan akan diadakan secara offline dan top 3 akan berkesempatan tampil di upacara penutupan Smanisda cup Elchapter 2024.
+                    Dance competition adalah ajang kompetisi bagi tim dengan bakat koreografi tari modern yang ditujukan untuk pelajar dan mahasiswa. Bertujuan untuk mencari tim dance dengan berkolaborasi dan berkreativitas dalam satu ajang yaitu Smanisda Cup Elchapter 2024. Penyishan akan diadakan secara offline dan top 3 akan berkesempatan tampil di upacara penutupan Smanisda cup Elchapter 2024. <br><br>Amalia Givea Anggun Putrinda  <br> Nomor :  082126640996  <br> Id Line : 03am10 <br><br>                   
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/REGULASI_DANCE COMPETION_SMANISDA CUP 2024.docx">JUKNIS</button>
+                    <button href="https://docs.google.com/forms/d/e/1FAIpQLSd7RY4zqv3magyXGCMgcB3WLiHhfFmt8Yktp_kF6_K95KbBYQ/viewform">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
 
         <div class="item">
-            <img src="Slider Describe/img1.png">
+            <img src="WRC/ICON_ROBOT_SOCCER-removebg-preview.png">
             <div class="introduce">
                 <div class="title">ElChapter 2024</div>
                 <div class="topic">ROBOTIC</div>
                 <div class="des">
                     <!-- 20 lorem -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    Lomba Robot Soccer mengasah keahlian pembuatan robot bagi pelajar SMP & SMA, membuka peluang bagi peserta menunjukkan kemampuan teknologi mereka dalam WRC 2024.
                 </div>
                 <button class="seeMore">SELENGKAPNYA &#8599</button>
             </div>
             <div class="detail">
-                <div class="title">Aerphone GHTK</div>
+                <div class="title">Robot Soccer</div>
                 <div class="des">
                     <!-- lorem 50 -->
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    Lomba Robot Soccer merupakan lomba yang dapat mengasah keahlian dalam pembuatan robot Lomba ini diperuntukkan bagi para pelajar SMP & SMA serta memiliki tujuan untuk membuka jalan bagi peserta yang ingin menunjukkan kemampuannya dalam bidang teknologi pembuatan robot yang dipertemukan dalam satu wadah yaitu WRC 2024.<br>(*lomba dilaksanakan full offline)<br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
                     <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="https://forms.gle/1JrHQUrGCtVcNMwx9">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img src="Slider Describe/img6.png">
+            <img src="WRC/ICON_WEB_DESIGN-removebg-preview.png">
             <div class="introduce">
                 <div class="title">ElChapter 2024</div>
                 <div class="topic">WEBDEV</div>
                 <div class="des">
                     <!-- 20 lorem -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    Lomba Web Developer mengasah keahlian pembuatan website untuk pelajar SMP & SMA, membuka peluang peserta menunjukkan kemampuan teknologi di WRC 2024 
                 </div>
                 <button class="seeMore">SELENGKAPNYA &#8599</button>
             </div>
             <div class="detail">
-                <div class="title">Aerphone GHTK</div>
+                <div class="title">Web Developer</div>
                 <div class="des">
                     <!-- lorem 50 -->
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    Lomba Web Developer merupakan lomba yang dapat mengasah keahlian dalam pembuatan Website Lomba ini diperuntukkan bagi para pelajar SMP & SMA serta memiliki tujuan untuk membuka jalan bagi peserta yang ingin menunjukkan kemampuannya dalam bidang teknologi pembuatan website yang dipertemukan dalam satu wadahyaitu WRC 2024.<br>(*lomba dilaksanakan full online)
                 </div>
+                <br><br>
                 <div class="checkout">
                     <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="https://forms.gle/1JrHQUrGCtVcNMwx9">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img src="Slider Describe/img6.png">
+            <img src="Lompamar/lompamar-removebg-preview.png">
             <div class="introduce">
                 <div class="title">ElChapter 2024</div>
                 <div class="topic">LOMPAMAR</div>
@@ -280,13 +324,14 @@
                 <button class="seeMore">SELENGKAPNYA &#8599</button>
             </div>
             <div class="detail">
-                <div class="title">Aerphone GHTK</div>
+                <div class="title">Lomba Palang Merah</div>
                 <div class="des">
                     <!-- lorem 50 -->
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
+                    <button href="Lompamar/JUKLAK LOMPAMAR XXII (3).pdf">JUKNIS</button>
                     <button>DAFTAR SEKARANG</button>
                 </div>
             </div>
@@ -308,9 +353,10 @@
                     <!-- lorem 50 -->
                     Lomba Presenter merupakan lomba yang dapat mengasah keahlian dalam membawakan suatu berita. Lomba ini diperuntukan bagi para peserta dengan rentang usia 13-19 tahun dan memiliki tujuan untuk membuka jalan bagi peserta yang ingin menunjukkan kemampuannya dalam bidang presenter yang dipertemukan dalam satu wadah yaitu LENSA 2024. <br><br> CP : Rizka <br> Nomor : 0895363901504 <br> Id Line : nevasea <br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/JUKNIS PRESENTER SC LENSA 2024.pdf">JUKNIS</button>
+                    <button href="https://forms.gle/4Z7LAv9GsrvGnDaF7">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
@@ -331,9 +377,10 @@
                     <!-- lorem 50 -->
                     Lomba Poster Manual merupakan lomba yang dapat mengasah keahlian dalam pembuatan poster secara manual. Lomba ini diperuntukkan bagi para pelajar SMP & SMA serta memiliki tujuan untuk membuka jalan bagi peserta yang ingin menunjukkan kemampuannya dalam bidang seni pembuatan poster manual yang dipertemukan dalam satu wadah yaitu LENSA 2024. <br><br> CP : Najla <br> Nomer : 082233650581 <br>Line : jla4ra<br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/REGULASI POSTER MANUAL COMPETITION SMANISDA CUP 2024.pdf">JUKNIS</button>
+                    <button href="https://forms.gle/4Z7LAv9GsrvGnDaF7">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
@@ -354,9 +401,10 @@
                     <!-- lorem 50 -->
                     Lomba Komik Strip merupakan lomba yang dapat mengasah keahlian dalam pembuatan komik strip. Lomba ini diperuntukkan bagi para pelajar SMP & SMA serta memiliki tujuan untuk membuka jalan bagi peserta yang ingin menunjukkan kemampuannya dalam bidang seni pembuatan komik strip yang dipertemukan dalam satu wadah yaitu LENSA 2024. <br><br> CP : Fabiane <br> Nomor: 081359704348 <br> Id line: fabiane_naura <br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/JUKNIS COMIC STRIP SC LENSA 2024.pdf">JUKNIS</button>
+                    <button href="https://forms.gle/4Z7LAv9GsrvGnDaF7">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
@@ -377,9 +425,10 @@
                     <!-- lorem 50 -->
                     Lomba Cerita Pendek merupakan lomba yang dapat mengasah keahlian dan kreativitas dalam pembuatan cerita pendek. Lomba ini diperuntukkan bagi para pelajar SMP & SMA serta memiliki tujuan untuk membuka jalan bagi peserta yang ingin menunjukkan kemampuannya dalam bidang menulis cerita pendek yang dipertemukan dalam satu wadah yaitu LENSA 2024. <br><br> CP : Zahra <br> Nomer: 081329861767<br>Id line: ailsaazahra <br><br>
                 </div>
+                <br><br>
                 <div class="checkout">
-                    <button>JUKNIS</button>
-                    <button>DAFTAR SEKARANG</button>
+                    <button href="Regulasi/REGULASI CERPEN LENSA 2024.pdf">JUKNIS</button>
+                    <button href="https://forms.gle/4Z7LAv9GsrvGnDaF7">DAFTAR SEKARANG</button>
                 </div>
             </div>
         </div>
@@ -406,37 +455,30 @@
     </div>
     <div class="footer-box">
         <h3>Competition</h3>
-        <li><a>Lompamar</a></li>
-        <li><a>WRC</a></li>
-        <li><a>Aryapraga</a></li>
-        <li><a>Lensa</a></li>
+        <li><a href="https://www.instagram.com/pmr_smanisda/">PMR</a></li>
+        <li><a href="https://www.instagram.com/inersia_smanisda/">Inersia</a></li>
+        <li><a href="https://www.instagram.com/lensa_2024/">Lensa</a></li>
+        <li><a href="https://www.instagram.com/osis_smanisda/">ElChapter</a></li>
     </div>
     <div class="footer-box">
         <h3>Created By</h3>
-        <li><a>Brian WIjaya</a></li>
-        <li><a>Attaya Faid</a></li>
-        <li><a>M. Alldo</a></li>
-        <li><a>Azyan Prabu</a></li>
-        <li><a>Raihan Rafif</a></li>
+        <li><a href="https://www.instagram.com/cnf.brianwijaya/?next=%2F&hl=en">Brian WIjaya</a></li>
+        <li><a href="https://www.instagram.com/attayafaid?igsh=bGt1NTh2MThsMzJ2">Attaya Faid</a></li>
+        <li><a href="https://www.instagram.com/alldomantapjiwa?igsh=anpiMWM0eWIxNjZq">M. Alldo</a></li>
+        <li><a href="https://www.instagram.com/yaozyn?utm_source=qr&igsh=YTdiMTM0YTMxNw">Azyan Prabu</a></li>
+        <li><a href="https://www.instagram.com/kingraihanrafiframadhan?igsh=MWU5M2F4eXBzYWpheA">Raihan Rafif</a></li>
     </div>
 </section>
 <div class="copyright">
     <p>&#169Copyright By Inersia Smanisda</p>
-</div>  <script src="index.js"></script>
+</div> 
+  <script src="index.js"></script>
   <script src="Slider Landing Page 01/app.js"></script>
   <script src="Slider Describe/app.js"></script>
-  <script>
-    const hamburgerMenu = document.querySelector('.hamburger');
-    const menu = document.querySelector('.nav-links')
-
-    hamburgerMenu.addEventListener('click', () => {
-        menu.classList.toggle('active')
-    })
-
-  </script>
    <script src="https://unpkg.com/feather-icons"></script>
    <script>
     feather.replace();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
