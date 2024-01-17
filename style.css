@@ -11,6 +11,8 @@ body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
   }
 
   header {
@@ -37,6 +39,11 @@ body {
     padding: 10px 20px;
   }
   
+  .carousel img{ 
+    background-color: blue;
+    height: 590px;
+  }
+
   .logo {
     font-size: 1.5em;
     padding-left: 12px;
@@ -46,6 +53,7 @@ body {
     list-style: none;
     display: flex;
     padding-left: 10px;
+    margin-top: 6px;
   }
   
   /* Animasi tulisan di bagian kiri (Logo) */
@@ -170,22 +178,32 @@ body {
    }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
     /* mobile */
     .about {
-      margin-top: 200px;
+      margin-top: 50px;
+    }
+
+    .about img{
+      margin-left: -20px;
     }
 
     body {
       overflow-x: hidden;
     }
 
-    .slider {
-      overflow-x: hidden;
-    }
-
     header {
       width: 100%;
+      background-color: transparent;
+      margin-top: 50px;
+    }
+
+    .carousel img{
+      height: 100vh;
+    }
+
+    .carousel img{
+      height: 100vh;
     }
 
     header ul {
@@ -214,10 +232,7 @@ body {
       background-color: #333;
      }
 
-     .active {
-        top: 55px !important;
-     }
-
+     
      .hamburger {
       display: flex;
       align-items: center;
@@ -234,7 +249,15 @@ body {
 @media screen and (max-width: 480px){
   /* mobile */
   .about {
-    margin-top: 300px;
+    margin-top: 200px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .slider {
+    overflow: hidden;
   }
 
   header {
@@ -267,7 +290,7 @@ body {
     background-color: #333;
    }
 
-   .active {
+   .ham-active {
       top: 55px !important;
    }
 
