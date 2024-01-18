@@ -180,12 +180,9 @@ body {
 
 @media screen and (max-width: 767px){
     /* mobile */
-    .about {
-      margin-top: 50px;
-    }
 
     .about img{
-      margin-left: -20px;
+      margin-left: -30px;
     }
 
     body {
