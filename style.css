@@ -245,9 +245,9 @@ body {
 
 @media screen and (max-width: 480px){
   /* mobile */
-  .about {
-    margin-top: 200px;
-  }
+  .about img{
+      margin-left: -20px;
+    }
 
   body {
     overflow-x: hidden;
