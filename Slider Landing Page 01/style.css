@@ -107,12 +107,12 @@ body {
     font-size: 24px;
     color: #1b1b1b;
     padding: 10px;
-    background: #edeae3;
+    background: #f7c0c0;
     border-radius: 0.2rem;
 }
 
 .social a .bx:hover {
-    background: #bc9667;
+    background: #f54ca9;
     color: #fff;
 }
 
