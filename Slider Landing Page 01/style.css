@@ -20,7 +20,7 @@ body {
 .slider{
     width: 1300px;
     height: 100vh;
-    background-color: none;
+    background-color: white;
     margin: auto;
     position: cover;
 }
