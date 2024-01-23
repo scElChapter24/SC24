@@ -173,12 +173,12 @@ body {
     font-size: 24px;
     color: #1b1b1b;
     padding: 10px;
-    background: #edeae3;
+    background: #f871db;
     border-radius: 0.2rem;
 }
 
 .social a .bx:hover {
-    background: #bc9667;
+    background: #f54ca9;
     color: #fff;
 }
 
@@ -214,7 +214,7 @@ body {
 .copyright {
     padding: 20px;
     text-align: center;
-    background: #edeae3;
+    background-color: rgb(252, 149, 209);
 }
 
 
@@ -334,6 +334,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 1.5rem;
+    background: #fa8beb;
 }
 
 .footer-box h2 {
@@ -357,12 +358,12 @@ body {
     font-size: 24px;
     color: #1b1b1b;
     padding: 10px;
-    background: #edeae3;
+    background: #fd7ce1;
     border-radius: 0.2rem;
 }
 
 .social a .bx:hover {
-    background: #bc9667;
+    background: #f54ca9;
     color: #fff;
 }
 
@@ -398,7 +399,7 @@ body {
 .copyright {
     padding: 20px;
     text-align: center;
-    background: #edeae3;
+    background: #fca1e8;
 }
 
 section {
@@ -414,4 +415,3 @@ section {
         overflow-x: hidden;
     }
 }
-
