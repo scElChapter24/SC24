@@ -321,6 +321,7 @@ body{
     font-size: large;
     bottom: 20%;
     left: 10%;
+    background-color: rgb(252, 149, 209);
 }
 #next{
     left: unset;
