@@ -108,7 +108,7 @@ body{
     transition: background 0.5s;
 }
 .describe .list .item .introduce .seeMore:hover{
-    background: #eee;
+    background: #f787d5;
 }
 .describe .list .item:nth-child(1){
     transform: var(--item1-transform);
