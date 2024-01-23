@@ -4,188 +4,6 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-body {
-    background: linear-gradient(180deg, #f7c0c0 0%, rgba(243, 16, 156, 0.84) 100%);
-    background-attachment: fixed;
-}
-.jumbotron img {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin: auto;
-}
-.jumbotron h3 {
-    color: #00FFF0;
-    text-align: center;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 800;
-}
-.jumbotron h5 {
-    color: white;
-    text-align: center;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 600;
-}
-.jumbotron p {
-    color: white;
-    text-align: center;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 400;
-}
-.button {
-    display: flex;
-    justify-content:center;
-    align-content: center;
-}
-.form {
-    width: 90px;
-    height: 57px;
-    background: #75FFEE;
-    border-radius: 8px;
-    text-align: center;
-    align-items: center;
-}
-.form a {
-    color: black;
-    font-family: 'Philosopher', sans-serif;
-    text-decoration: none;
-    margin-top: 30px;
-}
-.Juknis {
-    width: 170px;
-    height: 57px;
-    background: #75FFEE;
-    border-radius: 8px;
-    text-align: center;
-}
-.Juknis a {
-    color: black;
-    font-family: 'Philosopher', sans-serif;
-    text-decoration: none;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px; 
-    margin-top: 60px;
-}
-
- .info h5 {
-    color: white;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.follow h5 {
-    color: white;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.creator a{
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-family: 'Philosopher', sans-serif;
-}
-.creator h5 {
-    color: white;
-    font-weight: 500;
-    color: white;
-    font-family: 'Philosopher', sans-serif;
-}
-.logo img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-}
-.link a {
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-family: 'Philosopher', sans-serif;
-}
-.sosmed img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-.icon{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    margin-right: 10px;
-
-}  
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 90px;
-    margin-bottom: 60px;
-    font-family: 'Philosopher', sans-serif;
-}
-.about-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: right;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 90px;
-    margin-bottom: 60px;
-    font-family: 'Philosopher', sans-serif;
-}
-.copyright{
-    color: white;
-}
-
-@media only screen and (max-width: 768px) {
-    .about {
-        display: block;
-        text-align: center;
-        font-size: 3vw;
-    }
-    .desc p {
-        text-align: center;
-    }
-    .container p {
-        text-align: center;
-        font-size: 3vw;
-    }
-    hr {
-        width: 200px;
-    }
-    .footer {
-        display: block;
-        text-align: left;
-        margin-left: 40px;
-    }
-    .logo {
-        margin-bottom: 30px;
-    }
-    .info {
-        margin-bottom: 30px;
-    }
-    .follow {
-        margin-bottom: 30px;
-    }
-    .creator {
-        margin-bottom: 30px;
-    }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
     scroll-padding-top: 4rem;
     list-style: none;
     text-decoration: none;
@@ -195,7 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(180deg, #5C258D 0%, rgba(67, 137, 162, 0.84) 100%);
+    background: linear-gradient(180deg, #f7c0c0 0%, rgba(243, 16, 156, 0.84) 100%);
     background-attachment: fixed;
 }
 .jumbotron img {
@@ -355,12 +173,12 @@ body {
     font-size: 24px;
     color: #1b1b1b;
     padding: 10px;
-    background: #edeae3;
+    background: #f871db;
     border-radius: 0.2rem;
 }
 
 .social a .bx:hover {
-    background: #bc9667;
+    background: #f54ca9;
     color: #fff;
 }
 
@@ -396,7 +214,7 @@ body {
 .copyright {
     padding: 20px;
     text-align: center;
-    background: #edeae3;
+    background-color: rgb(252, 149, 209);
 }
 
 
@@ -516,6 +334,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 1.5rem;
+    background: #fa8beb;
 }
 
 .footer-box h2 {
@@ -539,12 +358,12 @@ body {
     font-size: 24px;
     color: #1b1b1b;
     padding: 10px;
-    background: #edeae3;
+    background: #fd7ce1;
     border-radius: 0.2rem;
 }
 
 .social a .bx:hover {
-    background: #bc9667;
+    background: #f54ca9;
     color: #fff;
 }
 
@@ -580,7 +399,7 @@ body {
 .copyright {
     padding: 20px;
     text-align: center;
-    background: #edeae3;
+    background: #fca1e8;
 }
 
 section {
@@ -594,10 +413,6 @@ section {
     }
     body {
         overflow-x: hidden;
-    }
-    .footer {
-        margin-left: -10px;
-        margin-bottom: -10px;
     }
 }
 
