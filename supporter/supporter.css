@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(180deg, #f7c0c0 0%, rgba(243, 16, 156, 0.84) 100%);
+    background-attachment: fixed;
+}
+.jumbotron img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+.jumbotron h3 {
+    color: #00FFF0;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 800;
+}
+.jumbotron h5 {
+    color: white;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+}
+.jumbotron p {
+    color: white;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+}
+.button {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+.form {
+    width: 90px;
+    height: 57px;
+    background: #75FFEE;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+}
+.form a {
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.Juknis {
+    width: 170px;
+    height: 57px;
+    background: #75FFEE;
+    border-radius: 8px;
+    text-align: center;
+}
+.Juknis a {
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+    text-decoration: none;
+}
+
+ .info h5 {
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.follow h5 {
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.creator a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+}
+.creator h5 {
+    color: white;
+    font-weight: 500;
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.link a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.sosmed img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.icon{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-right: 10px;
+
+}  
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    font-family: 'Philosopher', sans-serif;
+}
+.about-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    font-family: 'Philosopher', sans-serif;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    background-color: whitesmoke;
+}
+
+.border {
+    z-index: 2000;
+    margin-bottom: 2px;
+    color: black;
+    background-color: black;
+}
+
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.social a .bx {
+    font-size: 24px;
+    color: #1b1b1b;
+    padding: 10px;
+    background: #f871db;
+    border-radius: 0.2rem;
+}
+
+.social a .bx:hover {
+    background: #f54ca9;
+    color: #fff;
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box li a {
+    color: #1b1b1b;
+}
+
+.footer-box li a:hover {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5rem;
+}
+
+.footer-box .contact .location {
+    margin-bottom: 8px;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(252, 149, 209);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about {
+        display: block;
+        text-align: center;
+        font-size: 3vw;
+    }
+    .desc p {
+        text-align: center;
+    }
+    .container p {
+        text-align: center;
+        font-size: 3vw;
+    }
+    hr {
+        width: 200px;
+    }
+    .logo {
+        margin-bottom: 30px;
+    }
+    .info {
+        margin-bottom: 30px;
+    }
+    .follow {
+        margin-bottom: 30px;
+    }
+    .creator {
+        margin-bottom: 30px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.slider{
+    width: 1300px;
+    height: 100vh;
+    background-color: none;
+    margin: auto;
+    position: cover;
+}
+.slider .list01{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list01 img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: black;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}   
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    background: #fa8beb;
+}
+
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.social a .bx {
+    font-size: 24px;
+    color: #1b1b1b;
+    padding: 10px;
+    background: #fd7ce1;
+    border-radius: 0.2rem;
+}
+
+.social a .bx:hover {
+    background: #f54ca9;
+    color: #fff;
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box li a {
+    color: #1b1b1b;
+}
+
+.footer-box li a:hover {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5rem;
+}
+
+.footer-box .contact .location {
+    margin-bottom: 8px;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: #fca1e8;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+@media screen and (max-width: 768px){
+    .slider{
+        height: 100vh;
+        width: 678px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
