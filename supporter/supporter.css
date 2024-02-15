@@ -22,6 +22,10 @@ body {
     display: block;
     margin: auto;
 }
+
+.dropdown-menu {
+    position: center;
+
 .jumbotron h3 {
     color: #00FFF0;
     text-align: center;
