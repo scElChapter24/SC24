@@ -121,6 +121,10 @@ body {
     margin-bottom: 10px;
 }
 
+.footer-box img {
+    margin-top: 13px;
+}
+
 .footer-box li a {
     color: #1b1b1b;
 }
